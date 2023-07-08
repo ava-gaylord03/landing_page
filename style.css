@@ -2,31 +2,81 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .name{
-    font-size: 54px;
+    color: white;
+    font-size: 30px;
     font-weight: 700;
     display: flex;
+    padding: 20px;
+    padding-left: 200px;
 }
+
 .head_links{
+    
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding: 20px;
+    padding-right: 200px;
 }
 .head_link{
-    font-size: 14px;
+    
+    font-size: 22px;
     font-weight: normal;
     display: flex;
-    margin: 4px;
+    margin: 16px;
+    
 }
 .header{
     background-color: rgb(2, 53, 7);
-    color: white;
+    
     display: flex;
     justify-content: space-between
 }
 
 a{
+    color:rgb(174, 174, 174);
     text-decoration: none;
+
+}
+
+
+.head_content{
+    padding-top: 20px;
+    background-color: rgb(2, 53, 7);
     color: white;
+    display: flex;
+    padding-left: 200px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+.head_msg{ /*Thanks for stopping by*/
+    font-size: 48px;
+    padding-right: 120px;
+    min-width: 400px;
+    padding-bottom: 10px;
+    
+}
+
+.head_txt{ /*this website was designed in conjunction...*/
+    color:rgb(174, 174, 174);
+    display: flex;
+    font-size: 24px;
+    max-width: 462px;
+    align-items: flex-start;
+    
+
+}
+
+img{
+    display: flex;
+    max-width: 690px;
+    max-height: auto; 
+  
+}
+.image{
+    display: flex;
+
 }
