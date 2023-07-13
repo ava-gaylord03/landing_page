@@ -33,7 +33,8 @@
     background-color: rgb(2, 53, 7);
     
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 a{
@@ -105,6 +106,7 @@ button{
     background-color: white;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .qualifications{
@@ -118,17 +120,20 @@ button{
     color:rgb(2, 53, 7);
 }
 
-.img_cont{
+.img_cont, .img_cont_lower{
     display: flex;
     max-width: 900px;
     
     gap: 60px;
 
 }
-.img_cont_two{
+.img_cont_two, .img_cont_two_lower{
     display: flex;
     justify-content: center;
     flex-basis: 100%;
+}
+.img_cont_two_lower{
+    margin-top: 100px;
 }
 .logo{
     display: flex;
@@ -178,4 +183,28 @@ button{
     
     justify-content: center;
     max-width: 900px;
+    text-align: center;
+    gap: 60px;
+    
 }
+
+.aws-cap{
+    padding-left: 25px;
+}
+.git-cap{
+    padding-left: 25px;
+}
+
+.quote{
+    background-color: rgb(215, 215, 215);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.quote_content{
+    font-size: 48px;
+   
+}
+
