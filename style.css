@@ -120,110 +120,86 @@ button{
     color:rgb(2, 53, 7);
 }
 
-.img_cont, .img_cont_lower{
+.logo_section_cont{
     display: flex;
-    max-width: 900px;
-    
-    gap: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 
 }
-.img_cont_two, .img_cont_two_lower{
+
+.figure{
     display: flex;
-    justify-content: center;
-    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-.img_cont_two_lower{
-    margin-top: 100px;
-}
-.logo, .logo_2{
+.box{
     display: flex;
-    
     border: 4px solid rgb(230, 157, 0);
-   
     border-radius: 15px;
-    align-self: flex-start;
-}
-.logo{
-    min-width: 0; /*allow img to shrink beyond size of content*/
-    width: 100%;/*make items flexible*/
-    height: auto;/*...*/
-}
-.logo_2{
-    min-width: 0; /*allow img to shrink beyond size of content*/
-    width: 16%;/*make items flexible*/
-    height: auto;/*...*/
-}
-/*
-.border_1{
-    display: flex;
-    border: 2px solid rgb(20, 171, 35);
-    max-width: 200px;
-    max-height: 100px;
-}
-*/
-
-
-.git{ /*make border box correct size*/
-    padding-top: 61.515px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.aws{ /*make border box correct size*/
-    padding: 10px;
-}
-.linux{ /*make border box correct size*/
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3.66px;
-    padding-bottom: .755px;
-}
-.oracle{ /*make border box correct size*/
-    padding-left: 20px;
-    padding-right: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    
-}
-.python{
-    padding-top: 15px;
-    padding-right: 14.5px;
-    padding-left: 14.5px;
-    
-    
-}
-.java{
-    padding: 14.5px;
+    width: 150px;
+    height: 150px;
+    margin-right: 80px;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .caption{
-    display: flex;
-    
-    justify-content: center;
-    max-width: 900px;
+    width: 150px;
+
     text-align: center;
-    gap: 60px;
-    
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.logo{
+    max-height: 95%;
+    max-width: 95%;
+    padding: 10px;
+
 }
 
-.aws-cap{
-    padding-left: 25px;
-}
-.git-cap{
-    padding-left: 25px;
+.last{
+    display: flex;
+    flex-basis: 100%;
 }
 
-.quote{
-    background-color: rgb(215, 215, 215);
+.about{
+    background-color: rgb(193, 173, 148);
     min-height: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    
 
 }
-.quote_content{
+.about_title{
+    display: flex;
+    justify-content: center;
     font-size: 48px;
+    padding: 50px;
    
 }
 
+.about_content{
+    display:inline-block; /*going to need this if you decide to center the text. The <em> tag screws things up because flexbox. */
+    
+    font-size: 24px;
+    margin-bottom: 40px;
+    
+
+}
+.about_container{
+    display: flex;
+    max-width: 700px;
+}
+
+
+
+.highlight{
+    display:inline; /*so highlights don't mess up the paragraph*/
+    background-color: rgb(230, 157, 0);
+    
+    margin: 2px;
+}
