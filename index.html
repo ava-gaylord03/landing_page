@@ -40,7 +40,7 @@
                     freetime.
                 </div>
                 <div class= "head_button">
-                    <button> See more on The Odin Project </button>
+                    <button id = "odin_button" onclick = "window.location.href = 'https://theodinproject.com';"> See more on The Odin Project </button>
                 </div>
                 
             </div>
@@ -151,10 +151,10 @@
                     In a word (or two), I'm deeply curious. I think it's that sense of curiosity that started
                     my journey into computer science, actually. How things work, and why they work the
                     way they do are questions that I find myself asking about almost everything. And,
-                    since starting my journey, a new question has arisen: <em> How can we make it better? </em>
+                    since starting my journey, a new question has arisen: <br> <br> <em id = "question"> How can we make it better? </em>
 
                 </div>
-            </div>
+            
             <!--
             <div class = "about_content">
                 If you're reading this, it's highly likely that you've already taken a look at my
@@ -169,19 +169,62 @@
 
             </div>
             -->
-            <!--
-            <div class = "about_content">
-                In my freetime, I'm a very creative- and perhaps slightly eccentric- person. Ask me about my
-                woodworking, butterfly collection, and snail shell painting. At school, I find creative oulets like the Makerspace <!- - link here later - -> and in writing
-                for magazines like Stylus<!- - link here later - ->. One of my favorite parts of attending a liberal arts college
-                is the exposure I have to a variety of diverse fields. I truly love to learn, and take full advantage
-                of the vast expertise at BC.
+            
+                <div class = "about_content_2" id = "creativity">
+                    In my freetime, I'm a very creative- and perhaps slightly eccentric- person. Ask me about my
+                    woodworking, butterfly collection, and snail shell painting. At school, I find creative oulets like the Makerspace <!- - link here later - -> and in writing
+                    for magazines like Stylus<!-- link here later -->. One of my favorite parts of attending a liberal arts college
+                    is the exposure I have to a variety of diverse fields. I truly love to learn, and take full advantage
+                    of the vast expertise at BC.
 
 
+                </div>
             </div>
-            -->
+            
             
         </div>
+
+        
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button_2">
+                <button id = "submit_button" type="submit">Send your message</button>
+              </li>
+              
+            </ul>
+          </form>
+        <!--
+        <div class = "card_container">
+            <div class = "card">
+
+                <p class = "card_title last"> Like What You See? Tell me! </p>
+                <div class = "information">
+                    <div class = "info" id = "firstname"> First name</div>
+                    <div class = "info" id = "lastname"> Last name</div>
+                    <div class = "info last"> Company</div>
+                    <div class = "info last"> Details: </div>
+                </div>
+            </div>
+            
+        </div>
+        -->
+
+        <div class = "footer">
+            Ava Gaylord, 2023
+        </div>
+        
 
         
     </body>
