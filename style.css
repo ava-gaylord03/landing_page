@@ -4,94 +4,83 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+/*start of header styles*/
 .name{
     color: white;
     font-size: 30px;
     font-weight: 700;
-    display: flex;
-    padding: 20px;
-    padding-left: 200px;
+    padding: 20px 0 0 200px; 
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
     background-clip: text;
     -webkit-background-clip: text;
+    display: flex;
+   
 }
+
 .name:hover{
     color: transparent;
     transition: 500ms ease;
-    
-
 }
 
 .head_links{
-    
+    padding: 20px;
+    padding-right: 200px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 20px;
-    padding-right: 200px;
 }
+
 .head_link{
-    
+    margin: 16px;
     font-size: 22px;
     font-weight: normal;
     display: flex;
-    margin: 16px;
-    
 }
+
 .header{
     background-color: rgb(2, 53, 7);
-    
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
 }
 
 a{
     color:rgb(174, 174, 174);
     text-decoration: none;
-
 }
+/*end of header styles*/
 
-
+/*styling first major section*/
 .head_content{
-    padding-top: 20px;
+    padding: 20px 0px 40px 200px;
     background-color: rgb(2, 53, 7);
     color: white;
     display: flex;
-    padding-left: 200px;
-    padding-bottom: 40px;
     flex-wrap: wrap;
 }
+
 .head_msg{ /*Thanks for stopping by*/
     font-size: 48px;
-    padding-right: 120px;
-    min-width: 400px;
-    padding-bottom: 10px;
-    
+    padding: 0px 120px 10px 0px;
+    min-width: 400px; 
 }
 
 .head_txt{ /*this website was designed in conjunction...*/
     color:rgb(174, 174, 174);
-    display: flex;
     font-size: 24px;
     max-width: 462px;
+    display: flex;
     align-items: flex-start;
-    
-
 }
 
 .odin{
-    display: flex;
     max-width: 690px;
     max-height: auto; 
-  
-}
-.image{
     display: flex;
+}
 
-}
-#odin_button{
-    display: flex;
+#odin_button{ /*id for button that takes user to TOP website*/
     color: white;
     background-color: rgb(230, 157, 0);
     border-color:rgb(230, 157, 0);
@@ -99,37 +88,37 @@ a{
     font-size: 22px;
     margin-top: 20px;
     margin-left: 0px;
-    padding-left: 20px ;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px 10px 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
-#odin_button:hover{
-    background-color: rgb(230, 138, 0)
+
+#odin_button:hover{ /*change color on hover*/
+    background-color: rgb(239, 140, 25);
 }
+
 .head_button{
-    display: flex;
     max-width: 462px;
+    display: flex;
     justify-content: flex-start;
 }
+/*end of styling of first section*/
+
+/*styling of middle, and part with logos*/
 .mid{
-    display: flex;
+    padding-bottom: 40px;
     background-color: white;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 40px;
 }
 
 .qualifications{
     font-size: 48px;
+    margin: 50px 0px 50px 0px;
+    color:black;
     display: flex;
     justify-content: center;
     flex-basis: 100%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    color:black;
 }
 
 .logo_section_cont{
@@ -137,8 +126,6 @@ a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
 }
 
 .figure{
@@ -147,121 +134,117 @@ a{
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .box{
-    display: flex;
     border: 4px solid rgb(230, 157, 0);
     border-radius: 15px;
     width: 150px;
     height: 150px;
     margin-right: 80px;
+    display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .caption{
     width: 150px;
-
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 60px;
+    margin: 0px 0px 60px 0px;
 }
+
 .logo{
     max-height: 95%;
     max-width: 95%;
     padding: 10px;
-
 }
+/*end of styling middle section and part with logos*/
 
-.last{
+.last{ /*a class for when an element is supposed to be the last in the row/column. forces next el on next line. use with flex wrap.*/
     display: flex;
     flex-basis: 100%;
 }
 
+/*start of styling about section*/
 .about{
     background-color: rgb(193, 173, 148);
     min-height: 300px;
     display: flex;
-    
-    flex-wrap: wrap;
-    
-
-}
-.about_title{
-    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about_title{
     font-size: 48px;
     padding: 50px;
-   
+    display: flex;
+    justify-content: center;
 }
 
-.about_content, .about_content_2{
+.about_content,
+.about_content_2{
     display:inline-block; /*going to need this if you decide to center the text. The <em> tag screws things up because flexbox. */
-    margin-left: 40px;
+    margin: 0px 0px 50px 40px;
+    padding: 20px;
     background-color: rgb(2, 53, 7);
     color: rgb(193, 173, 148);
     border: 5px solid rgb(2, 53, 7);
-    padding: 20px;
     border-radius: 15px;
     font-size: 24px;
-    margin-bottom: 50px;
     max-width: 700px;
     max-height: 230px;
-    
-    
-
 }
 
-.about_content:hover, .about_content_2:hover{
+.about_content:hover,
+.about_content_2:hover{ /*change text to that orange when hovered*/
     color: rgb(230, 157, 0);
 }
-#question{
+
+#question{ /*increase font size of italicized question*/
     font-size: 30px;
 }
-#creativity{
+
+#creativity{ /*id for about_content_2 */
     margin-top: 150px;
     margin-right: 40px;
 }
+
 .about_container{
-    display: flex;
-    
+    display: flex; 
     justify-content: space-between;
+
 }
+/*end styling of about section*/
 
-
+/*start styling of form. Heavily based on MDN web docs: https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form*/
 form {
-    /* Center the form on the page */
     margin: 80px auto;
     width: 400px;
-    /* Form outline */
-    padding: 1em;
+    padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 1em;
+    border-radius: 15px;
     background-color: rgb(230, 157, 0);
-  }
+}
   
-  ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  form li + li {
-    margin-top: 1em;
-  }
+form li + li {
+    margin-top: 20px;
+}
   
-  label {
-    /* Uniform size & alignment */
+label {
     display: inline-block;
     width: 90px;
     text-align: right;
-  }
+}
   
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
+input,
+textarea {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
   
     /* Uniform text field size */
     width: 300px;
@@ -269,41 +252,36 @@ form {
   
     /* Match form field borders */
     border: 1px solid #999;
-  }
+}
   
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
+input:hover,
+textarea:hover { /*darken when hovered*/
     border-color: #000;
-  }
+}
   
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
+textarea {
+    vertical-align: top; /*basically equivalent of align-items: flex-start;*/
+    height: 5em; /*height of box*/
+}
   
-    /* Provide space to type some text */
-    height: 5em;
-  }
+.button {
+    padding-left: 90px; /*button is vertically aligned with boxes*/
+}
   
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
+button { /*this doesn't effect the odin button because I used an ID for that. IDs have higher degree of specificity*/
     margin-left: 95px;
-  }
+}
+/*end of styling form section*/
 
-
-  .footer{
+/*start of styling footer*/
+.footer{
     background-color: rgb(2, 53, 7);
     color: rgb(174, 174, 174);
     height: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*footer sticks to bottom of page*/
     justify-content: center;
     align-items: center;
-  }
+}
+/*end of styling footer*/
   
