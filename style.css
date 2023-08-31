@@ -63,6 +63,7 @@ a{
     color: white;
     display: flex;
     flex-wrap: wrap;
+    /*justify-content: space-between;*/
 }
 
 .head_msg{ /*Thanks for stopping by*/
@@ -79,10 +80,30 @@ a{
     align-items: flex-start;
 }
 
+.align_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.align_pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    
+}
+
+/*.profile_img{
+    display:flex;
+    align-items: flex-end;
+}
+*/
 .me{
     max-width: auto;
     max-height: 400px; 
-    display: flex;
+    padding-left: 40px;
+
+
 }
 
 #repo_button{ /*id for button that takes user to TOP website*/
