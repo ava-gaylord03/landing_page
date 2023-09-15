@@ -200,6 +200,7 @@ a{
 .about{
     background-color: rgb(193, 173, 148);
     min-height: 300px;
+    margin-bottom: 200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
