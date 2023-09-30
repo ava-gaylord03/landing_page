@@ -137,7 +137,8 @@ a{
     margin-top: 5px;
     border-style: solid hidden double hidden;
     border-width: 7px 0px 20px 0px;
-    border-color:rgb(193, 173, 148);
+    border-top-color:rgb(2, 53, 7);
+    border-bottom-color: rgb(193, 173, 148);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -315,7 +316,7 @@ button { /*this doesn't affect the odin button because I used an ID for that. ID
 /*start of styling footer*/
 .footer{
     background-color: rgb(2, 53, 7);
-    color: rgb(174, 174, 174);
+    color: rgb(174, 174, 174) ;
     padding: 20px 0 20px 0;
     height: auto;
     display: flex;
